@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FCC:Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="FccSf.css" />
+
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="div-section">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form action="" id="survey-form">
+            <label id="name-lable">* Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <br /><br />
+            <label id="email-label">* Email: </label>
+            <input type="email" id="email" placeholder="Enter your Email" required />
+            <br /><br />
+            <label id="number-label">* Age:</label>
+            <input type="number" id="number" placeholder="Age" min="1" max="125" required />
+            <br /><br />
+            <label id="selection">Which option best describes your current role?</label>
+            <select id="dropdown">
+                <optgroup label="Select an option"></optgroup>
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Full time learner</option>
+                <option>Prefer not to stay</option>
+                <option>others</option>
+            </select>
+            <br /><br />
+            <div id="rad">* How likely is that you would recommend freeCodeCamp to a friend?</div>
+            <div id="rad-val">
+                <input type="radio" name="same" /> Definitely<br />
+                <input type="radio" name="same" /> Maybe<br />
+                <input type="radio" name="same" />Not sure<br< />
+            </div>
+            <br /><br />
+            <label id="selection2">What do you like most in FCC:</label>
+            <select id="dropdown2">
+                <optgroup label="Select an option"></optgroup>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+            <br /><br />
+            <div id="che">Things that should be improved in the future
+                           (Check all that apply):
+            </div>
+            <div id="che-val">
+                <input type="checkbox" name="same1" value="Front-end Projects" /> Front-end Projects<br />
+                <input type="checkbox" name="same1" value="Back-end Projects" /> Back-end Projects<br />
+                <input type="checkbox" name="same1" value=" Data Visualization"/> Data Visualization<br />
+                <input type="checkbox" name="same1" value="Challenges"/> Challenges<br />
+                <input type="checkbox" name="same1" value="Open Source Community"/> Open Source Community<br />
+                <input type="checkbox" name="same1" value="Gitter help rooms"/> Gitter help rooms<br />
+                <input type="checkbox" name="same1" value="Videos"/> Videos<br />
+                <input type="checkbox" name="same1" value="City Meetups"/> City Meetups<br />
+                <input type="checkbox" name="same1" value="Wiki"/> Wiki<br />
+                <input type="checkbox" name="same1" value="Forum"/> Forum<br />
+                <input type="checkbox" name="same1" /> Additional Courses<br />
+
+            </div>
+            <br /><br />
+            <label id="feedback">Any Comments or Suggestions?</label>
+            <textarea id="comments" placeholder="Enter your comment here..." rows="4" cols="30"></textarea>
+            <br /><br />
+            <input type="submit" id="submit" value="Submit"></input>
+        </form>
+    </div>
+</body>
+</html>
